@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ssd.labs.calculator.math.LexerTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-30T21:54:48" hostname="ilya-notebook" time="0.024">
-  <properties/>
-  <testcase name="lexerIncorrect" classname="ssd.labs.calculator.math.LexerTests" time="0.022"/>
-  <testcase name="lexerTest1" classname="ssd.labs.calculator.math.LexerTests" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

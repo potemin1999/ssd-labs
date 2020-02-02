@@ -39,10 +39,29 @@ public class HistoryStorageTests {
 
     @Test
     public void testPrinter() {
-        var env = new CommandProcessor.CmdEnvironment();
+        var env = new CommandProcessor.DefaultEnvironment();
         var storage = env.getHistoryStorage();
         storage.pushEntry("i11", "r22");
         storage.getHistoryEntries().forEach(Object::toString);
         HistoryStorage.Printer.print(env, new String[0]);
+        //noinspection ResultOfMethodCallIgnored
+        new HistoryStorage.Printer().toString();
+    }
+
+    @Test
+    public void testEntry() {
+        var entry = new HistoryStorage.Entry("i", "r");
+        entry.setInput(entry.getResult());
+        Assert.assertEquals("r", entry.getInput());
+        entry.setResult("i");
+        Assert.assertEquals("i", entry.getResult());
+        //noinspection ResultOfMethodCallIgnored
+        entry.toString();
+        //noinspection ResultOfMethodCallIgnored
+        entry.hashCode();
+
+        var entry2 = new HistoryStorage.Entry("r", "i");
+        Assert.assertTrue(entry.canEqual(entry2));
+        Assert.assertEquals(entry, entry2);
     }
 }

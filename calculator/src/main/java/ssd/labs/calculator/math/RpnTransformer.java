@@ -6,7 +6,10 @@ import java.util.Collections;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-public class RpnTransformer implements Function<Collection<Token>, Collection<Token>> {
+/**
+ * Transforms tokens from infix notation to Reverse Polish notation
+ */
+class RpnTransformer implements Function<Collection<Token>, Collection<Token>> {
 
     @Override
     public Collection<Token> apply(Collection<Token> tokens) {
@@ -19,7 +22,7 @@ public class RpnTransformer implements Function<Collection<Token>, Collection<To
             return operatorLastToken.getOperator() != Operator.OPERATOR_PAREN_OPEN;
         };
 
-        Function<Token, Boolean> condition3 = (token) -> {
+        Function<Token, Boolean> condition2 = (token) -> {
             var top = stack.isEmpty() ? null : stack.get(stack.size() - 1);
             if (top == null)
                 return false;
@@ -44,10 +47,6 @@ public class RpnTransformer implements Function<Collection<Token>, Collection<To
                 output.add(token);
                 continue;
             }
-//            if (token.getType() == Token.Type.FUNCTION) {
-//                stack.add(token);
-//                continue;
-//            }
             if (token.getType() == Token.Type.OPERATOR) {
                 var operatorToken = (OperatorToken) token;
                 if (operatorToken.getOperator() == Operator.OPERATOR_PAREN_OPEN) {
@@ -61,16 +60,11 @@ public class RpnTransformer implements Function<Collection<Token>, Collection<To
                     stack.remove(stack.size() - 1);
                     continue;
                 }
-                while (condition3.apply(token)) {
+                while (condition2.apply(token)) {
                     output.add(stack.remove(stack.size() - 1));
                 }
                 stack.add(token);
             }
-            //var top = stack.isEmpty() ? null : stack.get(stack.size() - 1);
-//            while (condition2.apply(token)) {
-//                output.add(stack.remove(stack.size() - 1));
-//            }
-//            stack.add(token);
         }
 
         Collections.reverse(stack);

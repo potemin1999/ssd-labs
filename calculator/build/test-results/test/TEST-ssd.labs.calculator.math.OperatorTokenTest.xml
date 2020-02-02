@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ssd.labs.calculator.math.OperatorTokenTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-30T21:54:48" hostname="ilya-notebook" time="0.012">
-  <properties/>
-  <testcase name="newTokenCorrect" classname="ssd.labs.calculator.math.OperatorTokenTest" time="0.001"/>
-  <testcase name="newTokenIncorrect" classname="ssd.labs.calculator.math.OperatorTokenTest" time="0.008"/>
-  <testcase name="assertType" classname="ssd.labs.calculator.math.OperatorTokenTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

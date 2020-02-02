@@ -1,9 +1,6 @@
 package ssd.labs.calculator.cmd;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.ToString;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.io.PrintStream;
@@ -11,6 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * History storage
+ * Includes printer and entry class
+ */
 @FieldDefaults(level = AccessLevel.PACKAGE, makeFinal = true)
 public class HistoryStorage {
 
@@ -53,12 +54,13 @@ public class HistoryStorage {
         String result;
     }
 
+    @NoArgsConstructor
     public static class Printer {
 
         @Cmd(value = "history")
         public static int print(Environment env, String[] args) {
             var historyStorage = env.getHistoryStorage();
-            print(historyStorage, System.out);
+            print(historyStorage, env.getOutputStream());
             return 0;
         }
 

@@ -11,8 +11,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
+/**
+ * Parses tokens from string
+ */
 @NoArgsConstructor
-public class Lexer {
+class Lexer {
 
     private static Map<Character, Function<Character, Token>> simpleTokenSupplierMap = new HashMap<>();
 

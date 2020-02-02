@@ -9,6 +9,9 @@ import lombok.experimental.FieldDefaults;
 import java.text.ParseException;
 import java.util.Optional;
 
+/**
+ * Represents token, which can be executed over operands
+ */
 @Data
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PACKAGE, makeFinal = true)
