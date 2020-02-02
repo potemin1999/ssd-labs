@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7006ac18-8d00-47e8-bcbe-e93a82f76c2f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="178" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="calculator" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="calculator" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="calculator" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1X7gbAANsS6pPQ83vMGUxqxjrbl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../de-assignment" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Gradle.Tests in 'calculator.test'">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ssd.labs.calculator.Main" />
+      <module name="calculator.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ssd.labs.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperandTokenTests.parsingTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ssd.labs.calculator.math.OperandTokenTests.parsingTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'calculator.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="calculator [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="calculator-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/calculator-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'calculator.test'" />
+        <item itemvalue="JAR Application.calculator-1.0-SNAPSHOT.jar" />
+        <item itemvalue="Gradle.calculator [jar]" />
+        <item itemvalue="Gradle.OperandTokenTests.parsingTest" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7006ac18-8d00-47e8-bcbe-e93a82f76c2f" name="Default Changelist" comment="" />
+      <created>1580402615994</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580402615994</updated>
+      <workItem from="1580402618102" duration="18369000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="383" y="205" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580407773291">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="383" y="205" key="#com.intellij.fileTypes.FileTypeChooser/0.26.1366.742@0.26.1366.742" timestamp="1580407773291" />
+    <state x="496" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1580417677044">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="496" y="112" key="#com.intellij.ide.util.MemberChooser/0.26.1366.742@0.26.1366.742" timestamp="1580417677044" />
+    <state x="471" y="159" key="FileChooserDialogImpl" timestamp="1580403483058">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="471" y="159" key="FileChooserDialogImpl/0.26.1366.742@0.26.1366.742" timestamp="1580403483058" />
+    <state width="1318" height="234" key="GridCell.Tab.0.bottom" timestamp="1580458171549">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1318" height="234" key="GridCell.Tab.0.bottom/0.26.1366.742@0.26.1366.742" timestamp="1580458171549" />
+    <state width="1318" height="234" key="GridCell.Tab.0.center" timestamp="1580458171548">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1318" height="234" key="GridCell.Tab.0.center/0.26.1366.742@0.26.1366.742" timestamp="1580458171548" />
+    <state width="1318" height="234" key="GridCell.Tab.0.left" timestamp="1580458171548">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1318" height="234" key="GridCell.Tab.0.left/0.26.1366.742@0.26.1366.742" timestamp="1580458171548" />
+    <state width="1318" height="234" key="GridCell.Tab.0.right" timestamp="1580458171549">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1318" height="234" key="GridCell.Tab.0.right/0.26.1366.742@0.26.1366.742" timestamp="1580458171549" />
+    <state width="1318" height="234" key="GridCell.Tab.1.bottom" timestamp="1580458171552">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1318" height="234" key="GridCell.Tab.1.bottom/0.26.1366.742@0.26.1366.742" timestamp="1580458171552" />
+    <state width="1318" height="234" key="GridCell.Tab.1.center" timestamp="1580458171550">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1318" height="234" key="GridCell.Tab.1.center/0.26.1366.742@0.26.1366.742" timestamp="1580458171550" />
+    <state width="1318" height="234" key="GridCell.Tab.1.left" timestamp="1580458171550">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1318" height="234" key="GridCell.Tab.1.left/0.26.1366.742@0.26.1366.742" timestamp="1580458171550" />
+    <state width="1318" height="234" key="GridCell.Tab.1.right" timestamp="1580458171551">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1318" height="234" key="GridCell.Tab.1.right/0.26.1366.742@0.26.1366.742" timestamp="1580458171551" />
+    <state x="184" y="26" key="SettingsEditor" timestamp="1580404943572">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="184" y="26" key="SettingsEditor/0.26.1366.742@0.26.1366.742" timestamp="1580404943572" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ssd/labs/calculator/math/RpnTransformer.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/calculator$Tests_in__calculator_test_.ic" NAME="Tests in 'calculator.test' Coverage Results" MODIFIED="1580421286331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
