@@ -13,6 +13,10 @@ class RpnTransformer implements Function<Collection<Token>, Collection<Token>> {
 
     @Override
     public Collection<Token> apply(Collection<Token> tokens) {
+        return rpn(tokens);
+    }
+
+    public Collection<Token> rpn(Collection<Token> tokens) {
         var stack = new ArrayList<Token>(tokens.size() >> 1);
         var output = new ArrayList<Token>(tokens.size());
 

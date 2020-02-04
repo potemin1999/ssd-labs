@@ -9,16 +9,16 @@ public class OperatorTokenTest {
 
     @Test
     public void assertType() {
-        Assert.assertEquals(new OperatorToken(Operator.OPERATOR_DIVISION).getType(), Token.Type.OPERATOR);
+        Assert.assertEquals(new OperatorToken(Operator.OPERATOR_DIVISION, 0).getType(), Token.Type.OPERATOR);
     }
 
     @Test
     public void newTokenCorrect() {
-        new OperatorToken('+');
+        new OperatorToken('+', 0);
     }
 
     @Test(expected = ParseException.class)
     public void newTokenIncorrect() {
-        new OperatorToken('&');
+        new OperatorToken('&', 0);
     }
 }

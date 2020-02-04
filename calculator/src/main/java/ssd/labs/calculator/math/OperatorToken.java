@@ -18,11 +18,13 @@ import java.util.Optional;
 public class OperatorToken implements Token {
 
     Operator operator;
+    int position;
 
     @SneakyThrows
-    public OperatorToken(char operatorChar) throws RuntimeException {
-        operator = Optional.ofNullable(Operator.ofChar(operatorChar)).orElseThrow(
+    OperatorToken(char operatorChar, int position) throws RuntimeException {
+        this.operator = Optional.ofNullable(Operator.ofChar(operatorChar)).orElseThrow(
                 () -> new ParseException("unable to parse operator " + operatorChar, 0));
+        this.position = position;
     }
 
     @Override

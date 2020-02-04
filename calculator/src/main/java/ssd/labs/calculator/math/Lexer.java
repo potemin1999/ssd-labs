@@ -8,8 +8,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.BiFunction;
 import java.util.function.Consumer;
-import java.util.function.Function;
 
 /**
  * Parses tokens from string
@@ -17,7 +17,7 @@ import java.util.function.Function;
 @NoArgsConstructor
 class Lexer {
 
-    private static Map<Character, Function<Character, Token>> simpleTokenSupplierMap = new HashMap<>();
+    private static Map<Character, BiFunction<Character, Integer, Token>> simpleTokenSupplierMap = new HashMap<>();
 
     static {
         Operator.getCharOperatorMap().keySet().forEach(
@@ -39,23 +39,23 @@ class Lexer {
             if (buffer.length() > 0) {  // create operand from existing data
                 var operand = buffer.toString();
                 buffer.delete(0, buffer.length());
-                tokens.add(new OperandToken(operand));
+                tokens.add(new OperandToken(operand, position.get() - 1));
             }
-            tokens.add(simpleTokenSupplierMap.get(val).apply(val)); // add operator to tokens
+            // add operator to tokens
+            tokens.add(simpleTokenSupplierMap.get(val).apply(val, position.get()));
         };
 
         Consumer<Character> processWrapFunc = (Character val) -> {
             position.addAndGet(1);
-            if (val == ' ') {
+            if (val == ' ')
                 return;
-            }
             processFunc.accept(val);
         };
 
         try {
             chars.forEach(processWrapFunc);
             if (buffer.length() > 0) {
-                tokens.add(new OperandToken(buffer.toString()));
+                tokens.add(new OperandToken(buffer.toString(), position.get()));
             }
         } catch (Throwable throwable) {
             throw new ParseException("Exception while parsing input for calculator: " + throwable.toString(), position.get());

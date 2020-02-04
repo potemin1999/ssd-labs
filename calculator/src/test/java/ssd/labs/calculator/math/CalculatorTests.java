@@ -4,16 +4,27 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.text.ParseException;
-import java.util.EmptyStackException;
 import java.util.List;
 
 public class CalculatorTests {
 
-    @Test(expected = EmptyStackException.class)
+    @Test()
     public void wrongTokensTest() {
         var calculator = new Calculator();
         var tokens = List.of((Token) () -> Token.Type.FUNCTION);
-        calculator.calculate(tokens);
+        Assert.assertEquals(0.0, calculator.calculate(tokens), 0.0);
+    }
+
+    @Test
+    public void testDivisionByZero() {
+        var calculator = new Calculator();
+        var tokensList = List.of(
+                new OperandToken(1, 0),
+                new OperatorToken(Operator.OPERATOR_DIVISION, 0),
+                new OperandToken(0, 0)
+        );
+        var tokens = new RpnTransformer().apply(tokensList);
+        Assert.assertTrue(Double.isInfinite(calculator.calculate(tokens)));
     }
 
     @Test

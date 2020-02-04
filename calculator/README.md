@@ -10,4 +10,10 @@ Functionality:
  
 Contains tests for JUnit  
 100% test coverage
+
+To make it build or tested, set JAVA_HOME to JDK 11 directory, and run  
+`./gradlew build` or `./gradlew test`
  
+To create jar with calculator inside, use  
+`./gradlew jar`  
+It will be created in `build/libs`

@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.stream.Collectors;
 
 /**
- * Calculator command aka facade class
+ * Calculator cmd
  */
 @Log
 public class CalculatorCmd {
@@ -37,7 +37,7 @@ public class CalculatorCmd {
             env.getHistoryStorage().pushEntry(line, "" + result);
             env.getOutputStream().println(" = " + result);
         } catch (ParseException e) {
-            LOG.warning(e.toString());
+            System.err.println("at position " + e.getErrorOffset() + ": " + e.getMessage());
             env.getHistoryStorage().pushEntry(line, "error");
             return 1;
         }

@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class CommandProcessorTests {
 
@@ -54,6 +55,19 @@ public class CommandProcessorTests {
 
         var exitBytes = "/exit (who hugging cares about arguments)\n".getBytes();
         cmd.run(new ByteArrayInputStream(exitBytes));
+    }
+
+    @Test
+    public void testIgnoredCall() {
+        var counter = new AtomicInteger(0);
+        var env = new CommandProcessor.DefaultEnvironment(
+                call -> {
+                    counter.incrementAndGet();
+                    return false;
+                }
+        );
+        env.envCall(Environment.Call.EXIT);
+        Assert.assertEquals(1, counter.get());
     }
 
 

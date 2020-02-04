@@ -126,7 +126,7 @@ public class CommandProcessor {
     @AllArgsConstructor
     @Getter
     @FieldDefaults(level = AccessLevel.PACKAGE, makeFinal = true)
-    static class DefaultEnvironment implements Environment {
+    static final class DefaultEnvironment implements Environment {
 
         HistoryStorage historyStorage;
         PrintStream outputStream;

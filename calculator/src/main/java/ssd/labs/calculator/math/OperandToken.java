@@ -14,9 +14,11 @@ import lombok.experimental.FieldDefaults;
 public class OperandToken implements Token {
 
     double value;
+    int position;
 
-    OperandToken(String valueStr) {
-        value = Double.parseDouble(valueStr);
+    OperandToken(String valueStr, int position) {
+        this.value = Double.parseDouble(valueStr);
+        this.position = position;
     }
 
     @Override
